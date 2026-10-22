@@ -3,12 +3,20 @@ import starlight from "@astrojs/starlight";
 import icon from "astro-icon";
 
 export default defineConfig({
+  redirects: {
+    "/getting-started/introduction-huly/": "/getting-started/introduction-tracex/",
+  },
   integrations: [
     [
       starlight({
         customCss: ["./src/styles.css"],
-        title: "Huly Docs",
-        favicon: "/favicon.ico",
+        title: "TraceX Docs",
+        logo: {
+          src: "./src/assets/tracex-logo.png",
+          alt: "",
+          replacesTitle: true,
+        },
+        favicon: "/favicon.png",
         components: {
           // override default 'SocialIcons' component
           SocialIcons: "./src/components/CustomSocialIcons.astro",
@@ -17,10 +25,6 @@ export default defineConfig({
           {
             label: "Getting started",
             items: [
-              {
-                label: "What is Huly?",
-                link: "/getting-started/introduction-huly/",
-              },
               {
                 label: "What is TraceX?",
                 link: "/getting-started/introduction-tracex/",
@@ -32,14 +36,6 @@ export default defineConfig({
               {
                 label: "Learn the basics",
                 link: "/getting-started/learn-the-basics/",
-              },
-              {
-                label: "API & other tools",
-                link: "/getting-started/api-tools/",
-              },
-              {
-                label: "Self-hosting",
-                link: "/getting-started/self-host/",
               },
               {
                 label: "Mobile access",
@@ -294,42 +290,12 @@ export default defineConfig({
             ],
           },
           {
-            label: "Integrations",
-            collapsed: true,
-            items: [
-              {
-                label: "GitHub",
-                link: "/integrations/github/",
-              },
-              {
-                label: "Google Calendar",
-                link: "/integrations/google-calendar/",
-              },
-              {
-                label: "Gmail",
-                link: "/integrations/gmail/",
-              },
-              {
-                label: "Telegram",
-                link: "/integrations/telegram/",
-              },
-            ],
-          },
-          {
             label: "Additional modules",
             collapsed: true,
             items: [
               {
                 label: "Test management",
                 link: "/additional-modules/test-management/",
-              },
-              {
-                label: "Recruiting",
-                link: "/additional-modules/recruiting/",
-              },
-              {
-                label: "Leads",
-                link: "/additional-modules/leads/",
               },
               {
                 label: "Surveys",

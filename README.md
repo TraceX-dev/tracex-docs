@@ -1,6 +1,6 @@
-# Huly Docs
+# TraceX Docs
 
-[Huly Docs](https://docs.huly.io/) contains documentation for the Huly platform. While Huly Docs is currently in the early stages of development, our goal is for all concepts and features to be fully documented for our users.
+Documentation for the TraceX platform, covering quality management, product development and team collaboration. Visit [tracex.co](https://tracex.co/) to learn more.
 
 ## Local development
 
@@ -26,8 +26,6 @@ To verify and preview documentation locally:
 
 ## Submitting requests and feedback
 
-If there is a specific concept or feature you'd like to see covered in Huly Docs, the best way to let us know is to join our [Huly Community](https://huly.link/slack) on Slack to connect with other Huly users and communicate directly with our team.
+Join the [TraceX Community](https://app.tracex.co/login/join?workspace=tracex-ws) to ask questions, suggest documentation topics and share feedback with our team.
 
-Requests and feedback may also be submitted by email to [hey@huly.io](hey@huly.io).
-
-Your valuable input will guide which features we prioritize and help us create more thorough documentation for users!
+You can also submit documentation issues in the [TraceX Docs repository](https://github.com/TraceX-dev/tracex-docs).
