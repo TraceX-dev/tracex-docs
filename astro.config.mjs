@@ -3,6 +3,7 @@ import starlight from "@astrojs/starlight";
 import icon from "astro-icon";
 
 export default defineConfig({
+  site: "https://docs.tracex.co",
   redirects: {
     "/getting-started/introduction-huly/": "/getting-started/introduction-tracex/",
   },
